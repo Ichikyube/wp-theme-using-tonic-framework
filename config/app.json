@@ -1,0 +1,21 @@
+{
+    "assets": {
+        "app": [
+            "./resources/assets/js/app.js",
+            "./resources/assets/sass/app.scss"
+        ],
+        "bootstrap": [
+            "./resources/assets/js/bootstrap.js",
+            "./resources/assets/sass/bootstrap.scss"
+        ],
+        "functions": [
+            "./resources/assets/js/functions.js"
+        ],
+        "navigation": [
+            "./resources/assets/js/navigation.js"
+        ],
+        "magnific-popup": [
+            "./resources/assets/js/jquery.magnific-popup.min.js"
+        ]
+    }
+}

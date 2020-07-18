@@ -1,0 +1,229 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 5em;
+        background: #6c7122;
+        border: #1c9b9b solid 2em;
+}
+.cat-links {
+        float: left;
+        font-size: 90%;
+        font-weight: 400;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color__interactive;
+            &:focus,
+                &:hover {
+                background-color: $color__skin;
+                color: white;
+            }
+        }
+}
+
+.section {
+    background:
+    radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+    radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+    #8a3;
+    background-size: 20px 20px;
+    border: 25px outset green;
+}
+
+.continue-reading a{
+    color: blue;
+}
+
+.entry-meta {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: #999999;
+  font-style: italic;
+  margin: 0 auto 30px;
+  width: 885px;
+  text-align: center;
+}
+@media screen and (max-width: 1180px) {
+  .entry-meta {
+    width: 663.75px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .entry-meta {
+    width: 90%;
+  }
+}
+.entry-meta a {
+  color: #999999;
+}
+.entry-meta:after {
+  background: #cccccc;
+  content: "";
+  display: block;
+  margin: 15px auto;
+  width: 120px;
+  height: 1px;
+}
+
+.entry-title {
+  font-size: 1em;
+  line-height: 1.45161em;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+.entry-title a {
+  color: white;
+}
+@media screen and (max-width: 885px) {
+  .entry-title {
+    font-size: .85em;
+    line-height: 1.62162em;
+  }
+}
+
+.entry-header {
+    background: #44497e;
+    border-bottom: 52.5px solid #ff4646;
+    border-top: 52.5px solid #136f87;
+  color: white;
+  padding: 15px 0;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 885px) {
+  .entry-header {
+    border-top-width: 30px;
+    border-bottom-width: 30px;
+  }
+}
+
+.thumbnail .entry-header {
+  border: 0;
+  height: 250px;
+  overflow: hidden;
+  padding: 0;
+}
+
+@media screen and (max-width: 885px) {
+  .thumbnail .entry-header {
+    height: auto;
+  }
+}
+.thumbnail .entry-header .entry-title {
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  padding: 30px;
+  line-height: 1.25;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 885px) {
+  .thumbnail .entry-header .entry-title {
+    position: relative;
+  }
+}
+
+
+/* Custom Post Meta rules for single post / no sidebar. */
+
+.no-sidebar {
+	
+	.entry-meta {
+		margin-top: 1.5em;
+	}
+	
+	@media screen and (min-width: $query__medium) {
+		.post-content__wrap {
+			
+			.entry-meta {
+				margin-top: 2.25em;
+				font-size: 80%;
+
+				a {
+					font-size: 110%;
+					display: block;
+					border-bottom: 3px solid white;
+
+					&:hover,
+					&:focus {
+						border-bottom-color: $color__interactive;
+					}
+				}
+			}
+
+			.byline,
+			.posted-on,
+			.comments-link,
+			.edit-link {
+				display: block;
+				margin-bottom: 1em;
+
+				&:before,
+				&:after {
+					margin: 0;
+					content: "";
+				}
+			}
+
+			.extra {
+				display: inline;
+			}
+		}
+
+	}	
+}
+
+.thumbnail {
+        background: none;
+        display: content;
+}
+
+.post-thumbnail {      
+
+	margin-top: 1em;
+	//margin-left: -1em;
+	border-top: 1px solid hsl(0, 0%, 90%);
+	border-bottom: 1px solid hsl(0, 0%, 90%);
+	overflow: hidden;
+	img {
+		display: block;
+                width: auto;
+                max-height: 600px;
+                align-content: center;
+		margin: 0 auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                left: 0;
+                top: 0;
+                z-index: 0;
+                
+	}
+
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+        max-width: 100%;
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.entry-footer {
+	margin: 1.5em 0;
+	font-family: $font__sans;
+}
+

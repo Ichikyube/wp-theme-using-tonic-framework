@@ -1,0 +1,179 @@
+/* SVG Icons base styles */
+
+.icon {
+	display: inline-block;
+	color: currentColor;
+        border: black;
+	position: relative; /* Align more nicely with capital letters */
+	//top: -0.0625em;
+	vertical-align: middle;
+	width: 1.3em;
+        
+}
+
+/*--------------------------------------------------------------
+SVG Fallbacks
+--------------------------------------------------------------*/
+
+.svg-fallback {
+	display: none;
+}
+
+.no-svg .svg-fallback {
+	display: contents;
+}
+
+.no-svg .nav-links .svg-fallback {
+	padding: 0 .5em;
+	color: inherit;
+	background: inherit;
+}
+
+.no-svg .svg-fallback.icon-arrow-long-left:before {
+	content: "U+02190";
+}
+
+.no-svg .svg-fallback.icon-arrow-long-right:before {
+	content: "→";
+}
+
+
+/* Social Menu fallbacks */
+
+.no-svg .social-menu a {
+	height: auto;
+	width: auto;
+}
+
+.no-svg .social-menu li a .screen-reader-text {
+        display: none;
+	clip: auto;
+	font-size: 16px;
+	font-weight: 400;
+	height: auto;
+	position: relative !important; /* overrides previous !important styles */
+	width: auto;
+}
+
+.bshadow0, input {
+  box-shadow: inset 0 -2px #e7e7e7;
+}
+input:hover {
+  box-shadow: inset 0 -2px #ccc;
+}
+input, fieldset {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+input {
+  color: inherit;
+  line-height: 1.5;
+  height: 1.5em;
+  padding: .25em 0;
+}
+input:focus {
+  outline: none;
+  box-shadow: inset 0 -2px #449fdb;
+}
+.glyph {
+  font-size: 16px;
+  margin-right: 1.5em;
+  float: left;
+  width: 17em;
+}
+svg {
+  color: #000;
+}
+.liga {
+  width: 80%;
+  width: calc(100% - 2.5em);
+}
+.talign-right {
+  text-align: right;
+}
+.talign-center {
+  text-align: center;
+}
+.bgc1 {
+  background: #f1f1f1;
+}
+.fgc0 {
+  color: #000;
+}
+.fgc1 {
+  color: #999;
+}
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.mvm {
+  margin-top: .75em;
+  margin-bottom: .75em;
+}
+.mtn {
+  margin-top: 0;
+}
+.mtl, .mal {
+  margin-top: 1.5em;
+}
+.mbl, .mal {
+  margin-bottom: 1.5em;
+}
+.mal, .mhl {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.mhmm {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.ptl {
+  padding-top: 1.5em;
+}
+.pbs, .pvs {
+  padding-bottom: .25em;
+}
+.pvs, .pts {
+  padding-top: .25em;
+}
+.unit {
+  float: left;
+}
+.unitRight {
+  float: right;
+}
+.size1of2 {
+  width: 50%;
+}
+.size1of1 {
+  width: 100%;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.hidden-true {
+  display: none;
+}
+.textbox0 {
+  width: 3em;
+  background: #f1f1f1;
+  padding: .25em .5em;
+  line-height: 1.5;
+  height: 1.5em;
+}
+.fs0 {
+  font-size: 16px;
+}
+.fs1 {
+  font-size: 32px;
+}
+.name {
+  margin-left: .25em;
+}

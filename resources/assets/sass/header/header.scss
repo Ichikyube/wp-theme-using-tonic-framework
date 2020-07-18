@@ -1,0 +1,169 @@
+
+.header-image {
+        max-height: 80vh;
+        
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100vw;
+        }
+}
+
+.main-bg {
+    background: url(../images/bg.jpg) no-repeat center center; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    //webkit-mask-image: linear-gradient(goes up, transparent 25%, black 75%);
+    mask: url(../images/masking.svg);
+    mask-position: top right;
+    mask-repeat: no-repeat;
+    mask-mode: match-source;
+    mask-size:100% 90%;
+    height:calc(100% + 80px);
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.site-branding {
+        display: flex;
+        min-height: 65px;
+}
+.custom-logo-link {
+        margin-right: 1em;
+        margin-top: 2em;
+        img { 
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            min-width: 60px;
+        }
+       
+}
+.site-branding-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 65px;
+}
+
+@font-face {
+    font-family: 'BLACKOUT';  
+    src: local("BLACKOUT.TTF") format('truetype');  
+    font-weight: normal;  
+}
+.banner-title {
+    width: 50vw;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.site-title {
+        margin: 40vh auto 35vh auto;
+        padding: auto 0;
+        //font-weight: 900;
+	line-height: 1.5em;
+
+        a {
+            color: gold;
+            font-family: 'BLACKOUT', Fallback, sans-serif;          
+            font-size: 40vw;
+            display: flex;
+            justify-content: center;
+            text-shadow: 
+                0 0 2px rgba(0,0,0,0.2),
+                0 0 4px rgba(0,0,0,0.2), 
+                0 0 6px rgba(0,0,0,0.2); 
+            -webkit-transition: all 0.2s linear;
+            &:hover,
+            &:focus {
+                color: rgba(28, 28, 28, 0.2); 
+                opacity: 0.8;
+                text-decoration: underline;
+                letter-spacing: 15px; 
+            }
+        }
+
+}
+h3 { 
+    height: 100px;
+    font: bold 80px Helvetica, Sans-Serif;
+    
+    color: black; /* fallback */
+    color: rgba(0,0,0,0.2);
+    
+
+}
+h3:hover { 
+    color: rgba(28, 28, 28, 0.2); 
+    opacity: 0.8;
+    letter-spacing: 15px; 
+    font-size: 70px;
+}
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  //background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.site-description {
+    margin-top:  auto;
+    margin-left: 0.3em;
+    padding-left: auto;
+    font-size: .6em;
+    font-style: italic;
+    font-weight: 300;
+
+}
+
+@media screen and (min-width: $query__medium) {
+    .site-header {
+        display: flex;
+        justify-content: center;
+    }
+    .site-branding {
+        width: 45%;
+        flex: 1 0 auto;
+    }
+    .site-navigation {
+        width: 55%;
+    }
+    .site-title {
+        font-size: 4em;
+    }
+    .site-description {
+        font-size: .8em;
+    }
+}
+
+@media screen and (min-width: $query__small) {
+    .site-header {
+        display: flex;
+        justify-content: center;
+    }
+    .site-branding {
+        width: 30%;
+        flex: 1 0 auto;
+    }
+    .site-navigation {
+        width: 45%;
+    }
+    .site-title {
+        font-size: 5em;
+    }
+    .site-description {
+        font-size: .9em;
+    }
+}
+/*
+Header Menu
+*/
+@import "header-menu";
